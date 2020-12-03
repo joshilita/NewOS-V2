@@ -9,4 +9,4 @@ RESET="\e[0m"
 BOLD="\e[1m"
 
 #start
-echo "${GREENFG}Welcome to the new and improved version of NewOS! This script will install the OS for you. Enjoy!"
+echo -e "${GREENFG} Welcome to the new and improved version of NewOS! This script will install the OS for you. Enjoy!"undefined_2
