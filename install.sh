@@ -9,4 +9,12 @@ RESET="\e[0m"
 BOLD="\e[1m"
 
 #start
-echo -e "${GREENFG} Welcome to the new and improved version of NewOS! This script will install the OS for you. Enjoy!"undefined_2
+echo -e "${GREENFG} Welcome to the new and improved version of NewOS! This script will install the OS for you. Enjoy!"
+echo -e "Do you want to continue? (y/*)"
+read -n1 -r key
+if [ "$key" = 'y' ]; then
+echo -e "${BBLUEFG}Installing NewOS V2. Please Wait."
+else
+echo -e "${ERRORFG} Cancelled"
+exit 0
+fi
