@@ -13,8 +13,15 @@ echo -e "${GREENFG} Welcome to the new and improved version of NewOS! This scrip
 echo -e "Do you want to continue? (y/*)"
 read -n1 -r key
 if [ "$key" = 'y' ]; then
+echo ""
 echo -e "${BBLUEFG}Installing NewOS V2. Please Wait."
+sleep 2
+cd ../
+git clone https://github.com/joshilita/newosv2
+mv NewOS-V2 newosinstaller
+echo -e "${GREENFG}NewOS V2 Installed Successfully!"
 else
+echo ""
 echo -e "${ERRORFG} Cancelled"
 exit 0
 fi
