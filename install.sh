@@ -20,12 +20,16 @@ cd ../
 git clone https://github.com/joshilita/newosv2
 mv NewOS-V2 newosinstaller
 mv newosv2 NewOS-V2
-chmod +x ~/NewOS-V2/run
+touch ~/NewOS-V2/name.txt
+touch ~/NewOS-V2/startup
 echo -e "${GREENFG}NewOS V2 Installed Successfully!"
 echo "Do you want to run it now?"
 read -n1 -r run
 if [ "$run" = 'y' ]; then
-~/NewOS-V2/run
+echo -e "${BBLUEFG}Loading..."
+sleep 5
+echo ""
+bash ~/NewOS-V2/run
 else
 exit 0
 fi
