@@ -20,17 +20,17 @@ cd ../
 git clone https://github.com/joshilita/newosv2 --quiet
 mv NewOS-V2 newosinstaller
 mv newosv2 NewOS
+alias newos='cd ~/NewOS & bash run'
 echo -e "${GREENFG}NewOS V2 Installed Successfully!"
 echo "Do you want to run it now?"
 read -n1 -r run
 if [ "$run" = 'y' ]; then
 echo ""
-echo -e "${BBLUEFG}Loading..."
-sleep 5
-echo ""
-bash ~/NewOS/run
+echo -e "${ERRORFG}Running OS from installer is currently broken. Please run the OS by typing 'newos' in console."
 exit 0
 else
+echo ""
+echo "Run the OS by typing 'newos' in console."
 exit 0
 fi
 else
