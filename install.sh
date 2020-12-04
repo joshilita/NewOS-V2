@@ -26,10 +26,12 @@ echo -e "${GREENFG}NewOS V2 Installed Successfully!"
 echo "Do you want to run it now?"
 read -n1 -r run
 if [ "$run" = 'y' ]; then
+echo ""
 echo -e "${BBLUEFG}Loading..."
 sleep 5
 echo ""
 bash ~/NewOS-V2/run
+exit 0
 else
 exit 0
 fi
