@@ -17,11 +17,9 @@ echo ""
 echo -e "${BBLUEFG}Installing NewOS V2. Please Wait."
 sleep 2
 cd ../
-git clone https://github.com/joshilita/newosv2
+git clone https://github.com/joshilita/newosv2 --quiet
 mv NewOS-V2 newosinstaller
 mv newosv2 NewOS-V2
-touch ~/NewOS-V2/name.txt
-touch ~/NewOS-V2/startup
 echo -e "${GREENFG}NewOS V2 Installed Successfully!"
 echo "Do you want to run it now?"
 read -n1 -r run
